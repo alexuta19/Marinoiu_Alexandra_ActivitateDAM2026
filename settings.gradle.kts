@@ -22,6 +22,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Matei_Anastasia_ActivitateDAM2026"
+rootProject.name = "Marinoiu_Alexandra_ActivitateDAM2026"
 include(":app")
 include(":app:laborator2")

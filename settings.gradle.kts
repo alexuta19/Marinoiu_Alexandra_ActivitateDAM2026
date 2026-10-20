@@ -25,3 +25,5 @@ dependencyResolutionManagement {
 rootProject.name = "Marinoiu_Alexandra_ActivitateDAM2026"
 include(":app")
 include(":app:laborator2")
+include(":app:seminar4")
+include(":app:seminar4_exercitii_individuale")

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">seminar4_exercitii_individuale</string>
+    <string name="SalveazaMancare">Salveaza Mancare</string>
+    <string name="ExPizzaMargherita">ex: Pizza Margherita</string>
+    <string name="DenumireMancare">Denumire Mâncare:</string>
+    <string name="AdaugaMancareNoua">adauga o mancare noua</string>
+<string-array name="Tipuri" >
+    <item>MancareChinezeasca</item>
+    <item>MancareItalieneasca</item>
+    <item>MancareMexicana</item>
+    <item>MancareRomaneasca</item>
+</string-array>
+
+</resources>

@@ -22,6 +22,8 @@
             android:name=".AddMancareActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".AddMancareAiActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

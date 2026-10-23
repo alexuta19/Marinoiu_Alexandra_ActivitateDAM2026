@@ -6,31 +6,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".AddMancareActivity">
+    tools:context=".AddMancareActivity"
+    android:padding="24dp">
+
 
     <TextView
         android:id="@+id/tvTitlu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/AdaugaMancareNoua" />
+        android:text="@string/AdaugaMancareNoua"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/DenumireMancare" />
+        android:text="@string/DenumireMancare"
+        android:textSize="14sp"/>
+
 
     <EditText
         android:id="@+id/etDenumire"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/ExPizzaMargherita"
-        android:inputType="text" />
+        android:inputType="text"
+        android:layout_marginBottom="20dp"/>
 
     <Button
         android:id="@+id/btnSalveaza"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/SalveazaMancare"
+        android:textSize="14sp"
         />
 
     <Spinner
@@ -38,6 +48,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:entries="@array/Tipuri"
+        android:minHeight="48dp"
+        android:layout_marginBottom="32dp"
 />
 
 </LinearLayout>

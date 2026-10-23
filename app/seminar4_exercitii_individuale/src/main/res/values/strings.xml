@@ -4,7 +4,15 @@
     <string name="ExPizzaMargherita">ex: Pizza Margherita</string>
     <string name="DenumireMancare">Denumire Mâncare:</string>
     <string name="AdaugaMancareNoua">adauga o mancare noua</string>
-<string-array name="Tipuri" >
+    <string name="AdaugaMancare">Adaugă Mâncare</string>
+    <string name="NicioMancareInca">Nicio mâncare adăugată încă.</string>
+    <string name="salveazaInMeniu">🚀 Salvează în Meniu</string>
+    <string name="categorie">CATEGORIE</string>
+    <string name="ex_burger_gourmet">ex: Burger Gourmet</string>
+    <string name="denumireMancare">DENUMIRE MÂNCARE</string>
+    <string name="AdaugaMancareAIdesign">✨ Adăugare Mâncare (AI Design)</string>
+    <string name="AdaugaMancareAIDesign">Adaugă Mâncare (AI Design)</string>
+    <string-array name="Tipuri" >
     <item>MancareChinezeasca</item>
     <item>MancareItalieneasca</item>
     <item>MancareMexicana</item>

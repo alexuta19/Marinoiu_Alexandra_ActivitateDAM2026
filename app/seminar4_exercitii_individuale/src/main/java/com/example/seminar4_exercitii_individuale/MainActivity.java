@@ -8,33 +8,43 @@ import android.widget.Toast;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnDeschideAdaugare;
-    private Button btnDeschideAdaugareAi;
     private TextView tvRezultat;
 
+    private final ArrayList<mancare>ListaMancare= new ArrayList<>();
     private final ActivityResultLauncher<Intent> addMancareLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             result -> {
                 if (result.getResultCode() == RESULT_OK && result.getData() != null) {
-                    mancare mancare = (mancare) result.getData().getSerializableExtra("mancare_key");
-                    if (mancare != null) {
-                        tvRezultat.setText(mancare.toString());
-                        Toast.makeText(MainActivity.this, "Salvat: " + mancare.getDenumire(), Toast.LENGTH_LONG).show();
+                    mancare mancareNoua = (mancare) result.getData().getSerializableExtra("mancare_key");
+                    if (mancareNoua != null) {
+                        ListaMancare.add(mancareNoua);
+                        tvRezultat.setText(mancareNoua.toString());
+                        afiseazaLista();
+                        Toast.makeText(MainActivity.this, "Salvat: " + mancareNoua.getDenumire(), Toast.LENGTH_LONG).show();
                     }
                 }
             }
     );
+
+    private void afiseazaLista() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < ListaMancare.size(); i++) {
+            sb.append(i + 1).append(". ").append(ListaMancare.get(i).toString()).append("\n\n");
+        }
+        tvRezultat.setText(sb.toString());
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnDeschideAdaugare = findViewById(R.id.btnDeschideAdaugare);
-        btnDeschideAdaugareAi = findViewById(R.id.btnDeschideAdaugareAi);
+        Button btnDeschideAdaugare = findViewById(R.id.btnDeschideAdaugare);
+        Button btnDeschideAdaugareAi = findViewById(R.id.btnDeschideAdaugareAi);
         tvRezultat = findViewById(R.id.tvRezultat);
 
         // Deschide activitatea clasică

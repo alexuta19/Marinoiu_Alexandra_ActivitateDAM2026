@@ -34,7 +34,7 @@ public class AddMancareAiActivity extends AppCompatActivity {
             String categorie = spCategorie.getSelectedItem().toString();
 
             // Obiectul creat prin forma AI
-            mancare mancare = new mancare(denumire, 420, "Specialitate AI", categorie, true, true, 4.8f);
+            mancare mancare = new mancare(denumire, "Specialitate AI", categorie);
 
             Intent resultIntent = new Intent();
             resultIntent.putExtra("mancare_key", mancare);

@@ -34,7 +34,7 @@ public class AddMancareActivity extends AppCompatActivity {
             String categorie = spCategorie.getSelectedItem().toString();
 
             // Creăm obiectul Mancare
-            mancare mancare = new mancare(denumire, 350, "Fel Principal", categorie, true, false, 4.5f);
+            mancare mancare = new mancare(denumire, "Fel Principal", categorie);
 
             // Trimitem obiectul înapoi în MainActivity
             Intent resultIntent = new Intent();

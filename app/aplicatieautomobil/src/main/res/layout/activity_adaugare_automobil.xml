@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdaugareAutomobilActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textTitlu2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adaugă un automobil"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editMarca2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Marca" />
+
+    <EditText
+        android:id="@+id/editPret2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Preț"
+        android:inputType="numberDecimal" />
+
+    <Spinner
+        android:id="@+id/listaCombustibil2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/listaCombustibil" />
+
+    <RadioGroup
+        android:id="@+id/grupCutie2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioManuala2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Manuală" />
+
+        <RadioButton
+            android:id="@+id/radioAutomata2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Automată" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/bifaAerConditionat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aer condiționat" />
+
+    <Switch
+        android:id="@+id/comutatorNoua2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nouă" />
+
+    <RatingBar
+        android:id="@+id/stele2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1" />
+
+    <Button
+        android:id="@+id/butonSalveaza2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvează" />
+</LinearLayout>

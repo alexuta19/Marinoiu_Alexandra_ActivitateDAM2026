@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AplicatieAutomobil</string>
+    <string-array name="listaCombustibil">
+        <item>Benzină</item>
+        <item>Motorină</item>
+        <item>Electric</item>
+        <item>Hibrid</item>
+    </string-array>
+</resources>

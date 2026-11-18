@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">pentrutest2</string>
+    
+    <string-array name="variante_locatie">
+        <item> Mare</item>
+        <item> Munte</item>
+        <item> Campie</item>
+    </string-array>
+</resources>

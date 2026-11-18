@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdaugaInregistrare"
+    android:orientation="vertical">
+
+    <!-- 1. denumire (String) -> EditText (text) -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Denumire Facultate:" />
+
+    <EditText
+        android:id="@+id/etDenumire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ex:FEAA"
+        android:inputType="text"/>
+
+    <!-- 2. nrStudenti (int) -> EditText (număr) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Număr Studenți:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etNrStudenti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ex: 1200"
+        android:inputType="number" />
+
+    <!-- 3. taxa (double) -> EditText (număr cu zecimale) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Taxă (RON):"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etTaxa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ex: 3500.50"
+        android:inputType="numberDecimal" />
+
+    <!-- 4. areCamin (boolean) -> CheckBox -->
+    <CheckBox
+        android:id="@+id/cbAreCamin"
+        android:text="Are camin studentesc?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 5. tip (String) -> Spinner -->
+    <Spinner
+        android:id="@+id/spTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/tipuri_facultate"
+        />
+
+    <!-- 6. formaInvatamant (String) -> RadioGroup cu RadioButtons -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Formă Învățământ:"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbZi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="zi"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/rbSeral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seral / ID" />
+    </RadioGroup>
+
+    <!-- 7. rating (float) -> RatingBar -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Rating:"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:numStars="5"
+        android:stepSize="0.5" />
+    <!-- Butonul de salvare -->
+    <Button
+        android:id="@+id/btnSalveaza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Salvează Facultate" />
+</LinearLayout>

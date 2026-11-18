@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">pentruTest1</string>
+
+    <!-- Variantele pentru Spinner -->
+    <string-array name="tipuri_facultate">
+        <item>Publică</item>
+        <item>Privată</item>
+    </string-array>
+
+</resources>
